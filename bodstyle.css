@@ -207,8 +207,8 @@ body {
 .write-button {
     position: fixed;
     right: 100px;
-    top: 70%;
-    transform: translateY(-50%) scale(0.1); 
+    top: 90%;
+    transform: translateY(-50%) scale(0.2); 
     transform-origin: top right;
     opacity: 0;
     -webkit-animation: fadein 1s ease-in forwards;
