@@ -207,7 +207,7 @@ body {
 .write-button {
     position: fixed;
     right: 100px;
-    top: 100%;
+    top: 70%;
     transform: translateY(-50%) scale(0.1); 
     transform-origin: top right;
     opacity: 0;
