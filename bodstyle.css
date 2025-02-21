@@ -1,0 +1,232 @@
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein-out {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadein-out {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@font-face {
+    font-family: amoresa;
+    src: url(fonts/amoresa.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    overflow: hidden;
+    background-color: #a00b33;
+    background-image: url(images/body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.adjusted-text {
+   
+    top: 130px;
+    /* margin-bottom: 50px; */
+    width: 100%;
+    font-family: "Libre Baskerville", serif;
+    color: #f6a7c2;
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    opacity: 0;
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.middle-container {
+    position: relative;
+    display: inline-block;
+}
+
+.middle-gif {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: auto;
+    opacity: 0;
+
+    -webkit-animation: fadein-out 6s ease-in forwards;
+    -moz-animation: fadein-out 6s ease-in forwards;
+    -o-animation: fadein-out 6s ease-in forwards;
+       animation: fadein-out 6s ease-in forwards;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.middle-text {
+    
+    top: 130px;
+    color: #f6a7c2;
+    font-family: "amoresa", serif;
+    font-size: 7rem;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    opacity: 0;
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.bottom-image {
+
+    position: relative; 
+    top: 85px; 
+    display: block;
+    display: block;
+    margin: 0px auto;
+    width: 70%;
+    height: auto;
+    opacity: 0;
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.date-container {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+}
+
+.date {
+    
+    position: relative;
+    top: 10px;
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+       animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    -o-animation-delay: 9s;
+    animation-delay: 9s;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin: 0px auto;
+    width: 200%;
+    height: auto;
+    opacity: 0;
+    -webkit-animation: fadein-out 8s ease-in forwards;
+    -moz-animation: fadein-out 8s ease-in forwards;
+    -o-animation: fadein-out 8s ease-in forwards;
+       animation: fadein-out 8s ease-in forwards;
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+}
+.write-button {
+    position: fixed;
+    right: 100px;
+    top: 100%;
+    transform: translateY(-50%) scale(0.1); 
+    transform-origin: top right;
+    opacity: 0;
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+       animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    -o-animation-delay: 11s;
+       animation-delay: 11s;
+    /*object-fit: contain;*/
+    /*width: 10px;
+    height: auto;*/
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+    transition: opacity 0.3s ease-in-out;
+}
+
+.write-button:hover {
+    opacity: 1;
+}
+
